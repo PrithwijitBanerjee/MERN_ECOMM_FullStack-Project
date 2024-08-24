@@ -1,0 +1,427 @@
+# E-commerce MERN Stack Project Backend API Documentation
+
+1. <-----------------------------------Seeding Route / API Endpoints ------------------------------------------------------------------>
+
+    a. Seeding users -> adding some dummy user's  data to the database for testing purpose
+
+        api base url : http://localhost:5000/api/seed/users (Public API)
+        requested method: GET
+        requested params: None
+        query parameters: None
+        requested body: None
+
+    b. Seeding products -> adding some dummy product's  data to the database for testing purpose
+
+        api base url : http://localhost:5000/api/seed/products (Public API)
+        requested method: GET
+        requested params: None
+        query parameters: None
+        requested body: None
+
+    c. Seeding categories -> adding some dummy categories  data to the database for testing purpose
+
+        api base url : http://localhost:5000/api/seed/categories (Public API)
+        requested method: GET
+        requested params: None
+        query parameters: None
+        requested body: None
+        
+2. <-------------------------------------------------User Route/ API Endpoints------------------------------------->
+
+    a. Register a new user -> create a new user in database through REST API 
+
+        api base url:  http://localhost:5000/api/v1/users/register (Public API)
+
+        requested method: POST
+        requested params: None
+        query parameters: None
+        requested body: name, email, phoneNo, password, address, isAdmin(optional), isBannedUsr(optional), avatar_url(optional field)
+
+    b. Get all users except Admin people including search and pagination only Admin can access it (Private Route -> Only Admin can access it)
+
+        api base url:  http://localhost:5000/api/v1/users/all_users (Private API -> Only Admin can access)
+
+        requested method: GET
+        requested params: None
+        query parameters: limit, page
+        requested body: None
+
+    c. Get particular user by :id  only Admin can access it (Private Route)
+
+        api base url:  http://localhost:5000/api/v1/users/all_users/:id (Private API)
+
+        requested method: GET
+        requested params: id
+        query parameters: None
+        requested body: None
+
+    d. Delete single user by :id only Admin can access it (Private Route -> Only Admin can access it)
+
+        api base url:  http://localhost:5000/api/v1/users/del/:id (Private API -> Only Admin can access it)
+
+        requested method: DELETE
+        requested params: id
+        query parameters: None
+        requested body: None    
+
+    e. Update single user by :id only Admin can access it (Private Route -> Only Admin can access it)
+
+        api base url:  http://localhost:5000/api/v1/users/edit/:id (Private API -> Only Admin can access it)
+
+        requested method: PUT or, PATCH
+        requested params: id
+        query parameters: None
+        requested body:  name, email, phoneNo, password, address, isAdmin(optional), isBannedUsr, avatar_url(optional field)
+
+    f. Banned user by :id by Admin only Admin can access it (Private Route -> Only Admin can access it)
+
+        api base url:  http://localhost:5000/api/v1/users/ban-user/:id (Private API -> Only Admin can access it)
+
+        requested method: PUT or, PATCH
+        requested params: id
+        query parameters: None
+        requested body: None
+
+    g. Unbanned user by :id by Admin only Admin can access it (Private Route -> Only Admin can access it)
+
+        api base url:  http://localhost:5000/api/v1/users/unban-user/:id (Private API -> Only Admin can access it)
+
+        requested method: PUT or, PATCH
+        requested params: id
+        query parameters: None
+        requested body: None
+
+    h. Update user password (Private API)
+
+        api base url:  http://localhost:5000/api/v1/users/update-password (Private API)
+
+        requested method: PUT or, PATCH
+        requested params: None
+        query parameters: None
+        requested body: None
+
+    i. Forget user password (Public API)
+
+        api base url:  http://localhost:5000/api/v1/users/forget-password (Public API)
+
+        requested method: POST
+        requested params: None
+        query parameters: None
+        requested body: email, newPass
+
+
+3. <-------------------------------------------------User Authentication Route/ API Endpoints------------------------------------->
+
+     a. Protected Route for frontend redirection (Public API)
+
+        api base url:  http://localhost:5000/api/v1/auth/protected (Public API)
+
+        requested method: GET
+        requested params: None
+        query parameters: None
+        requested body: None
+
+    b. User Login (Public API)
+
+        api base url:  http://localhost:5000/api/v1/auth/login (Public API)
+
+        requested method: POST
+        requested params: None
+        query parameters: None
+        requested body: email, password
+
+    c. User Logout controller Route (Private API)
+
+        api base url:  http://localhost:5000/api/v1/auth/logout (Private API)
+
+        requested method: POST
+        requested params: None
+        query parameters: None
+        requested body: None    
+
+    d. Get new access token by existing refresh token when it has been expired (Public API)
+
+        api base url:  http://localhost:5000/api/v1/auth/refresh-token (Public API)
+
+        requested method: GET
+        requested params: None
+        query parameters: None
+        requested body: None        
+
+
+
+4. <-------------------------------------------------Category Route/ API Endpoints------------------------------------->
+
+    a. Add new category by Admin (Private API -> Only Admin)
+
+        api base url:  http://localhost:5000/api/v1/categories/add (Private API -> Only Admin)
+
+        requested method: POST
+        requested params: None
+        query parameters: None
+        requested body: name
+
+    b. Get all categories list (Public API)
+
+        api base url:  http://localhost:5000/api/v1/categories/list (Public API)
+
+        requested method: GET
+        requested params: None
+        query parameters: None
+        requested body: None
+
+    c. Get single category by :slug as id (Public API)
+
+        api base url:  http://localhost:5000/api/v1/categories/list/:slug (Public API)
+
+        requested method: GET
+        requested params: slug
+        query parameters: None
+        requested body: None  
+
+    d. Delete single category by :slug as id (Private API -> Only Admin)
+
+        api base url:  http://localhost:5000/api/v1/categories/del/:slug (Private API -> Only Admin)
+
+        requested method: DELETE
+        requested params: slug
+        query parameters: None
+        requested body: None  
+
+    e. Update single category by :slug as id (Private API -> Only Admin)
+
+        api base url:  http://localhost:5000/api/v1/categories/edit/:slug (Private API -> Only Admin)
+
+        requested method: PUT or, PATCH
+        requested params: slug
+        query parameters: None
+        requested body: name    
+
+
+
+5. <-------------------------------------------------Product Route/ API Endpoints------------------------------------->
+
+    a. Add new product by Admin (Private API -> Only Admin)
+
+        api base url:  http://localhost:5000/api/v1/products/add (Private API -> Only Admin)
+
+        requested method: POST
+        requested params: None
+        query parameters: None
+        requested body: name, desc, price, qty, brand, category, sold(optional field), pro_image(optional field), thumbnail_image(optional field), shipping_charge (optional field)
+
+    b. Get all list of products with pagination (Public API)
+
+        api base url:  http://localhost:5000/api/v1/products/list (Public API)
+
+        requested method: GET
+        requested params: None
+        query parameters: limit and page
+        requested body: None
+
+    d. Get single product by :slug as id(Public API)
+
+        api base url:  http://localhost:5000/api/v1/products/list/:slug (Public API)
+
+        requested method: GET
+        requested params: slug
+        query parameters: None
+        requested body: None    
+
+    d. Search products by keywords(Public API)
+
+        api base url:  http://localhost:5000/api/v1/products/search/:keywords (Public API)
+
+        requested method: GET
+        requested params: keywords
+        query parameters: None
+        requested body: None   
+
+    e. Delete single product by :slug as id (Private API -> Only Admin)
+
+        api base url:  http://localhost:5000/api/v1/products/del/:slug (Private API -> Only Admin)
+
+        requested method: DELETE
+        requested params: slug
+        query parameters: None
+        requested body: None      
+
+    f. Update product by :slug as id (Private API -> Only Admin)
+
+        api base url:  http://localhost:5000/api/v1/products/edit/:slug (Private API -> Only Admin)
+
+        requested method: PUT or, PATCH
+        requested params: slug
+        query parameters: None
+        requested body: desc, price, qty, brand, category, sold, pro_image, thumbnail_image, shipping_charge   
+
+
+
+6. <-------------------------------------------------Slider Route/ API Endpoints------------------------------------->
+
+    a. Add new slider of product by Admin (Private API -> Only Admin)
+
+        api base url:  http://localhost:5000/api/v1/sliders/add (Private API -> Only Admin)
+
+        requested method: POST
+        requested params: None
+        query parameters: None
+        requested body: title, desc, slider_image
+
+    b. Get all sliders (Public API)
+
+        api base url:  http://localhost:5000/api/v1/sliders/list (Public API)
+
+        requested method: GET
+        requested params: None
+        query parameters: None
+        requested body: None   
+
+    c. Delete single slide by :slug as id (Private API -> Only Admin)
+
+        api base url:  http://localhost:5000/api/v1/sliders/del/:slug (Private API -> Only Admin)
+
+        requested method: DELETE
+        requested params: slug
+        query parameters: None
+        requested body: None         
+
+    d. Edit single slide by :slug as id (Private API -> Only Admin)
+
+        api base url:  http://localhost:5000/api/v1/sliders/edit/:slug (Private API -> Only Admin)
+
+        requested method: PUT or, PATCH
+        requested params: slug
+        query parameters: None
+        requested body: title, desc, slider_image
+
+
+7. <-------------------------------------------------Carts Route/ API Endpoints------------------------------------->
+
+    a. add item to cart by user (Public API)
+
+        api base url:  http://localhost:5000/api/v1/carts/add (Public API)
+
+        requested method: POST
+        requested params: None
+        query parameters: None
+        requested body: productId, quantity
+
+    b. Get all products carts (Public API)
+
+        api base url:  http://localhost:5000/api/v1/carts/list (Public API)
+
+        requested method: GET
+        requested params: None
+        query parameters: None
+        requested body: None
+
+    c. Remove any product from cart (Public API)
+
+        api base url:  http://localhost:5000/api/v1/carts/remove-item-cart (Public API)
+
+        requested method: DELETE
+        requested params: None
+        query parameters: None
+        requested body: productId  
+
+    d. Clear the entire cart (Public API)
+
+        api base url:  http://localhost:5000/api/v1/carts/empty-cart (Public API)
+
+        requested method: DELETE
+        requested params: None
+        query parameters: None
+        requested body: None    
+
+
+
+
+8. <-------------------------------------------------Orders Route/ API Endpoints------------------------------------->
+
+
+    a. Create a new order (Private API)
+
+        api base url:  http://localhost:5000/api/v1/orders/place (Private API)
+
+        requested method: POST
+        requested params: None
+        query parameters: None
+        requested body: items, totalAmount, shippingAddress1, shippingAddress2, city, phone, zip, country, status (optional field)
+
+        ex: {
+                    "items": [
+                            {
+                                "productId": {
+                                    "_id": "66b98eb0b7059c64bc3e4a16",
+                                    "name": "Apple Watch 2",
+                                    "price": 500.75,
+                                    "qty": 10
+                                },
+                                "quantity": 1,
+                                "price": 500.75,
+                                "total": 500,
+                                "_id": "66bb80222235facd33155903",
+                                "createdAt": "2024-08-13T15:47:46.849Z",
+                                "updatedAt": "2024-08-13T15:47:46.849Z"
+                            },
+                            {
+                                "productId": {
+                                    "_id": "66b98dfab7059c64bc3e4a11",
+                                    "name": "Sony WX-5",
+                                    "price": 100.75,
+                                    "qty": 5
+                                },
+                                "quantity": 1,
+                                "price": 100.75,
+                                "total": 100,
+                                "_id": "66bc39b815683e6078106d56",
+                                "createdAt": "2024-08-14T04:59:36.250Z",
+                                "updatedAt": "2024-08-14T04:59:36.250Z"
+                            }
+                        ],
+                        "totalAmount": 600,
+                        "shippingAddress1": "kolkata",
+                        "shippingAddress2": "Mumbai",
+                        "city": "chandannagore",
+                        "phone": 9836716501,
+                        "zip": 712136,
+                        "country": "India"
+            }
+
+
+    b. Get all orders (Private API)
+
+        api base url:  http://localhost:5000/api/v1/orders/list (Private API)
+
+        requested method: GET
+        requested params: None
+        query parameters: None
+        requested body: None    
+
+    c. Get single order information by :order_id (User/Admin) 
+
+        api base url:  http://localhost:5000/api/v1/orders/list/single (User/Admin) 
+
+        requested method: GET
+        requested params: None
+        query parameters: None
+        requested body: None    
+
+    d. Cancel order by :order_id by Admin (Private API) 
+
+        api base url:  http://localhost:5000/api/v1/orders/cancel/:order_id (Private API) 
+
+        requested method: DELETE
+        requested params: order_id
+        query parameters: None
+        requested body: None 
+
+    e. Update order status by :order_id by Admin (Private API -> Only Admin) 
+
+        api base url:  http://localhost:5000/api/v1/orders/edit/:order_id (Private API -> Only Admin) 
+
+        requested method: PUT or, PATCH
+        requested params: order_id
+        query parameters: None
+        requested body: orderStatus                     
