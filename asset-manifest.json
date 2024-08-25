@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Ecomm24-App/static/css/main.5dbf254f.css",
+    "main.js": "/Ecomm24-App/static/js/main.ad8146de.js",
+    "static/js/453.419a5d54.chunk.js": "/Ecomm24-App/static/js/453.419a5d54.chunk.js",
+    "index.html": "/Ecomm24-App/index.html",
+    "main.5dbf254f.css.map": "/Ecomm24-App/static/css/main.5dbf254f.css.map",
+    "main.ad8146de.js.map": "/Ecomm24-App/static/js/main.ad8146de.js.map",
+    "453.419a5d54.chunk.js.map": "/Ecomm24-App/static/js/453.419a5d54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5dbf254f.css",
+    "static/js/main.ad8146de.js"
+  ]
+}
