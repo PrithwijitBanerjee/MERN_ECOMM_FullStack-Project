@@ -4,7 +4,7 @@
 
     a. Seeding users -> adding some dummy user's  data to the database for testing purpose
 
-        api base url : http://localhost:5000/api/seed/users (Public API)
+        api base url : https://rogue-crystalline-drug.glitch.me/api/seed/users (Public API)
         requested method: GET
         requested params: None
         query parameters: None
@@ -12,7 +12,7 @@
 
     b. Seeding products -> adding some dummy product's  data to the database for testing purpose
 
-        api base url : http://localhost:5000/api/seed/products (Public API)
+        api base url : https://rogue-crystalline-drug.glitch.me/api/seed/products (Public API)
         requested method: GET
         requested params: None
         query parameters: None
@@ -20,7 +20,7 @@
 
     c. Seeding categories -> adding some dummy categories  data to the database for testing purpose
 
-        api base url : http://localhost:5000/api/seed/categories (Public API)
+        api base url : https://rogue-crystalline-drug.glitch.me/api/seed/categories (Public API)
         requested method: GET
         requested params: None
         query parameters: None
@@ -30,7 +30,7 @@
 
     a. Register a new user -> create a new user in database through REST API 
 
-        api base url:  http://localhost:5000/api/v1/users/register (Public API)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/users/register (Public API)
 
         requested method: POST
         requested params: None
@@ -39,7 +39,7 @@
 
     b. Get all users except Admin people including search and pagination only Admin can access it (Private Route -> Only Admin can access it)
 
-        api base url:  http://localhost:5000/api/v1/users/all_users (Private API -> Only Admin can access)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/users/all_users (Private API -> Only Admin can access)
 
         requested method: GET
         requested params: None
@@ -48,7 +48,7 @@
 
     c. Get particular user by :id  only Admin can access it (Private Route)
 
-        api base url:  http://localhost:5000/api/v1/users/all_users/:id (Private API)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/users/all_users/:id (Private API)
 
         requested method: GET
         requested params: id
@@ -57,7 +57,7 @@
 
     d. Delete single user by :id only Admin can access it (Private Route -> Only Admin can access it)
 
-        api base url:  http://localhost:5000/api/v1/users/del/:id (Private API -> Only Admin can access it)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/users/del/:id (Private API -> Only Admin can access it)
 
         requested method: DELETE
         requested params: id
@@ -66,7 +66,7 @@
 
     e. Update single user by :id only Admin can access it (Private Route -> Only Admin can access it)
 
-        api base url:  http://localhost:5000/api/v1/users/edit/:id (Private API -> Only Admin can access it)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/users/edit/:id (Private API -> Only Admin can access it)
 
         requested method: PUT or, PATCH
         requested params: id
@@ -75,7 +75,7 @@
 
     f. Banned user by :id by Admin only Admin can access it (Private Route -> Only Admin can access it)
 
-        api base url:  http://localhost:5000/api/v1/users/ban-user/:id (Private API -> Only Admin can access it)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/users/ban-user/:id (Private API -> Only Admin can access it)
 
         requested method: PUT or, PATCH
         requested params: id
@@ -84,7 +84,7 @@
 
     g. Unbanned user by :id by Admin only Admin can access it (Private Route -> Only Admin can access it)
 
-        api base url:  http://localhost:5000/api/v1/users/unban-user/:id (Private API -> Only Admin can access it)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/users/unban-user/:id (Private API -> Only Admin can access it)
 
         requested method: PUT or, PATCH
         requested params: id
@@ -93,7 +93,7 @@
 
     h. Update user password (Private API)
 
-        api base url:  http://localhost:5000/api/v1/users/update-password (Private API)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/users/update-password (Private API)
 
         requested method: PUT or, PATCH
         requested params: None
@@ -102,7 +102,7 @@
 
     i. Forget user password (Public API)
 
-        api base url:  http://localhost:5000/api/v1/users/forget-password (Public API)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/users/forget-password (Public API)
 
         requested method: POST
         requested params: None
@@ -114,7 +114,7 @@
 
      a. Protected Route for frontend redirection (Public API)
 
-        api base url:  http://localhost:5000/api/v1/auth/protected (Public API)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/auth/protected (Public API)
 
         requested method: GET
         requested params: None
@@ -123,7 +123,7 @@
 
     b. User Login (Public API)
 
-        api base url:  http://localhost:5000/api/v1/auth/login (Public API)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/auth/login (Public API)
 
         requested method: POST
         requested params: None
@@ -132,7 +132,7 @@
 
     c. User Logout controller Route (Private API)
 
-        api base url:  http://localhost:5000/api/v1/auth/logout (Private API)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/auth/logout (Private API)
 
         requested method: POST
         requested params: None
@@ -141,7 +141,7 @@
 
     d. Get new access token by existing refresh token when it has been expired (Public API)
 
-        api base url:  http://localhost:5000/api/v1/auth/refresh-token (Public API)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/auth/refresh-token (Public API)
 
         requested method: GET
         requested params: None
@@ -154,7 +154,7 @@
 
     a. Add new category by Admin (Private API -> Only Admin)
 
-        api base url:  http://localhost:5000/api/v1/categories/add (Private API -> Only Admin)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/categories/add (Private API -> Only Admin)
 
         requested method: POST
         requested params: None
@@ -163,7 +163,7 @@
 
     b. Get all categories list (Public API)
 
-        api base url:  http://localhost:5000/api/v1/categories/list (Public API)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/categories/list (Public API)
 
         requested method: GET
         requested params: None
@@ -172,7 +172,7 @@
 
     c. Get single category by :slug as id (Public API)
 
-        api base url:  http://localhost:5000/api/v1/categories/list/:slug (Public API)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/categories/list/:slug (Public API)
 
         requested method: GET
         requested params: slug
@@ -181,7 +181,7 @@
 
     d. Delete single category by :slug as id (Private API -> Only Admin)
 
-        api base url:  http://localhost:5000/api/v1/categories/del/:slug (Private API -> Only Admin)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/categories/del/:slug (Private API -> Only Admin)
 
         requested method: DELETE
         requested params: slug
@@ -190,7 +190,7 @@
 
     e. Update single category by :slug as id (Private API -> Only Admin)
 
-        api base url:  http://localhost:5000/api/v1/categories/edit/:slug (Private API -> Only Admin)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/categories/edit/:slug (Private API -> Only Admin)
 
         requested method: PUT or, PATCH
         requested params: slug
@@ -203,7 +203,7 @@
 
     a. Add new product by Admin (Private API -> Only Admin)
 
-        api base url:  http://localhost:5000/api/v1/products/add (Private API -> Only Admin)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/products/add (Private API -> Only Admin)
 
         requested method: POST
         requested params: None
@@ -212,7 +212,7 @@
 
     b. Get all list of products with pagination (Public API)
 
-        api base url:  http://localhost:5000/api/v1/products/list (Public API)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/products/list (Public API)
 
         requested method: GET
         requested params: None
@@ -221,7 +221,7 @@
 
     d. Get single product by :slug as id(Public API)
 
-        api base url:  http://localhost:5000/api/v1/products/list/:slug (Public API)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/products/list/:slug (Public API)
 
         requested method: GET
         requested params: slug
@@ -230,7 +230,7 @@
 
     d. Search products by keywords(Public API)
 
-        api base url:  http://localhost:5000/api/v1/products/search/:keywords (Public API)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/products/search/:keywords (Public API)
 
         requested method: GET
         requested params: keywords
@@ -239,7 +239,7 @@
 
     e. Delete single product by :slug as id (Private API -> Only Admin)
 
-        api base url:  http://localhost:5000/api/v1/products/del/:slug (Private API -> Only Admin)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/products/del/:slug (Private API -> Only Admin)
 
         requested method: DELETE
         requested params: slug
@@ -248,7 +248,7 @@
 
     f. Update product by :slug as id (Private API -> Only Admin)
 
-        api base url:  http://localhost:5000/api/v1/products/edit/:slug (Private API -> Only Admin)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/products/edit/:slug (Private API -> Only Admin)
 
         requested method: PUT or, PATCH
         requested params: slug
@@ -261,7 +261,7 @@
 
     a. Add new slider of product by Admin (Private API -> Only Admin)
 
-        api base url:  http://localhost:5000/api/v1/sliders/add (Private API -> Only Admin)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/sliders/add (Private API -> Only Admin)
 
         requested method: POST
         requested params: None
@@ -270,7 +270,7 @@
 
     b. Get all sliders (Public API)
 
-        api base url:  http://localhost:5000/api/v1/sliders/list (Public API)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/sliders/list (Public API)
 
         requested method: GET
         requested params: None
@@ -279,7 +279,7 @@
 
     c. Delete single slide by :slug as id (Private API -> Only Admin)
 
-        api base url:  http://localhost:5000/api/v1/sliders/del/:slug (Private API -> Only Admin)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/sliders/del/:slug (Private API -> Only Admin)
 
         requested method: DELETE
         requested params: slug
@@ -288,7 +288,7 @@
 
     d. Edit single slide by :slug as id (Private API -> Only Admin)
 
-        api base url:  http://localhost:5000/api/v1/sliders/edit/:slug (Private API -> Only Admin)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/sliders/edit/:slug (Private API -> Only Admin)
 
         requested method: PUT or, PATCH
         requested params: slug
@@ -300,7 +300,7 @@
 
     a. add item to cart by user (Public API)
 
-        api base url:  http://localhost:5000/api/v1/carts/add (Public API)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/carts/add (Public API)
 
         requested method: POST
         requested params: None
@@ -309,7 +309,7 @@
 
     b. Get all products carts (Public API)
 
-        api base url:  http://localhost:5000/api/v1/carts/list (Public API)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/carts/list (Public API)
 
         requested method: GET
         requested params: None
@@ -318,7 +318,7 @@
 
     c. Remove any product from cart (Public API)
 
-        api base url:  http://localhost:5000/api/v1/carts/remove-item-cart (Public API)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/carts/remove-item-cart (Public API)
 
         requested method: DELETE
         requested params: None
@@ -327,7 +327,7 @@
 
     d. Clear the entire cart (Public API)
 
-        api base url:  http://localhost:5000/api/v1/carts/empty-cart (Public API)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/carts/empty-cart (Public API)
 
         requested method: DELETE
         requested params: None
@@ -342,7 +342,7 @@
 
     a. Create a new order (Private API)
 
-        api base url:  http://localhost:5000/api/v1/orders/place (Private API)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/orders/place (Private API)
 
         requested method: POST
         requested params: None
@@ -392,7 +392,7 @@
 
     b. Get all orders (Private API)
 
-        api base url:  http://localhost:5000/api/v1/orders/list (Private API)
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/orders/list (Private API)
 
         requested method: GET
         requested params: None
@@ -401,7 +401,7 @@
 
     c. Get single order information by :order_id (User/Admin) 
 
-        api base url:  http://localhost:5000/api/v1/orders/list/single (User/Admin) 
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/orders/list/single (User/Admin) 
 
         requested method: GET
         requested params: None
@@ -410,7 +410,7 @@
 
     d. Cancel order by :order_id by Admin (Private API) 
 
-        api base url:  http://localhost:5000/api/v1/orders/cancel/:order_id (Private API) 
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/orders/cancel/:order_id (Private API) 
 
         requested method: DELETE
         requested params: order_id
@@ -419,7 +419,7 @@
 
     e. Update order status by :order_id by Admin (Private API -> Only Admin) 
 
-        api base url:  http://localhost:5000/api/v1/orders/edit/:order_id (Private API -> Only Admin) 
+        api base url:  https://rogue-crystalline-drug.glitch.me/api/v1/orders/edit/:order_id (Private API -> Only Admin) 
 
         requested method: PUT or, PATCH
         requested params: order_id

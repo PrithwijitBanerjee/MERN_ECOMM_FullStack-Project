@@ -79,8 +79,8 @@ const AddProductForm = () => {
         formik.setFieldValue('thumbnail_image', files);
     };
     if (status === STATUSES.ERROR) {
-        return (<div className="container vh-100 justify-content-center align-items-center">
-            <h1 className="text-danger my-3">{error}</h1>
+        return (<div className="container vh-100 d-flex justify-content-center align-items-center text-center">
+            <h1 className="text-danger my-3">{error?.message || 'An error occurred'}</h1>
         </div>);
     }
     return (

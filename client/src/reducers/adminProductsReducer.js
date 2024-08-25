@@ -22,7 +22,7 @@ export const fetchProducts = createAsyncThunk(
             const response = await axiosInstance.get(`products/list?page=${page}&limit=2`);
             return response.data;
         } catch (error) {
-            return thunkAPI.rejectWithValue(error.response.data);
+            return thunkAPI.rejectWithValue(error.response.data?.message);
         }
     }
 );
