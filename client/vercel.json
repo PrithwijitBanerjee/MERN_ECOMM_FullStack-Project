@@ -1,0 +1,10 @@
+{
+    "installCommand": "pnpm install",
+    "rewrites": [
+      {
+        "source": "/api/(.*)",
+        "destination": "https://rogue-crystalline-drug.glitch.me/api/v1/$1"
+      }
+    ]
+  }
+  
